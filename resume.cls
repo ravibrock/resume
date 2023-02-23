@@ -105,7 +105,7 @@
   \emph{#3}                \hfill                  \emph{#4}% Stop a space
   }\smallskip
   % \cdot used for bullets, items non-indented
-  \begin{list}{\huge{$\cdot$}}{\leftmargin=0em}
+  \begin{list}{\huge{$\cdot$}}{\leftmargin=1.5em}
   \itemsep -0.5em \vspace{-0.5em}
 }{
   \end{list}
