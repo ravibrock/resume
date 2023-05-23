@@ -33,7 +33,7 @@
 
 \def \addressSep {$\vert$}         % Set default address seperator
 
-% One or two address lines can be specified 
+% One or two address lines can be specified
 \let \@addressone \relax
 \let \@addresstwo \relax
 
@@ -97,12 +97,12 @@
 \newenvironment{rSubsection}[4]{
   %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
   %%    Employer (bold)                     Dates (regular)    %%
-  %%    Title (emphasis)                Location (emphasis)    %%
+  %%    Title (italic)                    Location (italic)    %%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \textbf{#1}                 \hfill                  {    #2}% Stop a space
   \ifthenelse{\equal{#3}{}}{}{
   \\
-  \emph{#3}                \hfill                  \emph{#4}% Stop a space
+  \textit{#3}                \hfill                  \textit{#4}% Stop a space
   }\smallskip
   % \cdot used for bullets, items non-indented
   \begin{list}{\huge{$\cdot$}}{\leftmargin=1.5em}
