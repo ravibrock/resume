@@ -1,6 +1,6 @@
 \documentclass{resume}
 
-\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry}
+\usepackage[left=0.3in,top=0.3in,right=0.3in,bottom=0.3in]{geometry}
 \usepackage{contour}
 \usepackage{ulem}
 
@@ -20,50 +20,53 @@
 \begin{document}
     \begin{rSection}{Experience}
         \begin{rSubsection}{Indra Capital - \href{https://indracapital.tech}{\myuline{Indracapital.tech}}}{2022}{Paid Intern}{Fayetteville, AR}
-            \item Developed programs to scrape user-generated content from social media platforms
-            \item Used Python to create custom scraping tools and process the outputs
+            \item Developed Python scripts to scrape user-generated content from social media platforms
+            \item Processed and analyzed the scraped data for use in algorithmic trading
         \end{rSubsection}
 
-        \begin{rSubsection}{University of Arkansas - \href{https://web.archive.org/web/20210426215910/https://arkansascovid.com/}{\myuline{Arkansascovid.com}}}{2021}{Student Journalist}{Fayetteville, AR}
-            \item Enrolled concurrently at the University of Arkansas as a data journalist
+        \begin{rSubsection}{University of Arkansas - \href{https://web.archive.org/web/20210426215910/https://arkansascovid.com/}{\myuline{Arkansascovid.com}}}{2021}{Student Data Journalist}{Fayetteville, AR}
             \item Used R, Excel, Tableau, and Flourish to process data and create meaningful visualizations
-            \item Wrote and researched stories about COVID-19 in Arkansas
-            \item Fact-checked other students' stories before publication
+            \item Wrote, researched, and fact-checked stories about COVID-19 in Arkansas
         \end{rSubsection}
 
         \begin{rSubsection}{Arkansashype Reselling}{2018-2021}{Founder}{Fayetteville, AR}
-            \item Started a business buying shoes from retailers and selling them on the aftermarket at 13
-            \item Worked on this for 3 years and scaled it into a business generating \$60,000+ a year in revenue
-            \item Used Excel for accounting and R to scrape data to optimize my business
+            \item Started buying shoes and selling them on the aftermarket at 13; scaled to \$60,000+ a year of revenue
+            \item Used Excel for accounting and R to scrape data to optimize purchasing
         \end{rSubsection}
     \end{rSection}
 
     \begin{rSection}{Education}
-        \begin{rSubsection}{University of Waterloo}{2023-Present}{Mathematics}{Waterloo, CA}
+        \begin{rSubsection}{University of Waterloo}{2023-2028}{Mathematics}{Waterloo, CA}
             \item Studying in the Faculty of Mathematics' co-op program
             \item Planning to major in mathematics with a focus on statistics and computer science
+        \end{rSubsection}
 
+        \begin{rSubsection}{Fayetteville High School}{2019-2023}{4.32 GPA}{Fayetteville, AR}
+            \item Graduated as valedictorian and with distinguished honors
+            \item Member of National Honor Society, National English Honor Society, French Honor Society, and Mu Alpha Theta
         \end{rSubsection}
-        \begin{rSubsection}{Fayetteville High School}{2019-2021, 2022-2023}{4.32 GPA}{Fayetteville, AR}
-            \item Graduating as valedictorian, and with distinguished honors
-            \item Member of:
-                \begin{itemize}
-                    \item[\huge{$\cdot$}]\vspace{-0.5em} National Honor Society
-                    \item[\huge{$\cdot$}]\vspace{-0.5em} National English Honor Society
-                    \item[\huge{$\cdot$}]\vspace{-0.5em} Société Honoraire de Français \textit{(French honor society)}
-                    \item[\huge{$\cdot$}]\vspace{-0.5em} Mu Alpha Theta \textit{(Mathematics honor society)}
-                \end{itemize}
-        \end{rSubsection}
+
         \begin{rSubsection}{Haverstock Sixth Form}{2021-2022}{Received A's for all A-Levels}{London, UK}
-            \item Spent junior year here as a visiting student
+            \item Spent my junior year of high school here as a visiting student before returning to the US
             \item Took Economics, English, French, and Geography A-Levels
+        \end{rSubsection}
+    \end{rSection}
+
+    \begin{rSection}{Projects}
+        \begin{rSubsection}{\href{https://github.com/ravibrock/texts-ai}{\myuline{Texts AI}}}{\textit{Python, Regex, SQL, Transformers}}{}{}
+            \item Designed and built a program that uses custom MacOS integrations to automatically read and reply to new texts
+            \item Queries messages with SQL and Regex and generates responses using multithreading and \textit{LLaMa} or \textit{GPT} LLMs
+        \end{rSubsection}
+        \begin{rSubsection}{\href{https://github.com/ravibrock/twitter-scraping}{\myuline{Twitter Catalog}}}{\textit{Python}}{}{}
+            \item Built a tool to find which Twitter accounts you're most likely to be interested in based on who you follow
+            \item Implemented rate limit and API handling with Requests and used Pandas to process data
         \end{rSubsection}
     \end{rSection}
 
     \begin{rSection}{Skills}
         \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-            Backend Languages & Bash, Lua, Python, R \\
-            Frontend Languages & CSS, HTML, \LaTeX \\
+            Languages & English (native), French (proficient), German (intermediate) \\
+            Programming languages & Bash, Lua, Python, R, CSS, HTML, \LaTeX\\
             Tools & AWS, Excel, Git, Vercel, Vim
         \end{tabular}
     \end{rSection}
