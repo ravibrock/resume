@@ -1,9 +1,5 @@
 \documentclass{resume}
 
-\usepackage[left=0.3in,top=0.3in,right=0.3in,bottom=0.3in]{geometry}
-\usepackage{contour}
-\usepackage{ulem}
-
 \renewcommand{\ULdepth}{1.8pt}
 \contourlength{0.8pt}
 \newcommand{\myuline}[1]{%
@@ -12,7 +8,7 @@
 }
 
 \name{Ravi Brock}
-\address{\href{mailto:ravikeats@gmail.com}{\myuline{ravikeats@gmail.com}} \\ \href{https://www.ravibrock.com}{\myuline{ravibrock.com}} \\ \href{https://github.com/ravibrock}{\myuline{GitHub}} \\ \href{https://www.linkedin.com/in/ravibrock/}{\myuline{LinkedIn}}}
+\address{\href{mailto:ravikeats@gmail.com}{\myuline{ravikeats@gmail.com}} \\ \href{https://ravibrock.com}{\myuline{ravibrock.com}} \\ \href{https://github.com/ravibrock}{\myuline{GitHub}} \\ \href{https://www.linkedin.com/in/ravibrock/}{\myuline{LinkedIn}}}
 
 \def\nameskip{\bigskip}
 \def\sectionskip{\medskip}
@@ -53,11 +49,11 @@
     \end{rSection}
 
     \begin{rSection}{Projects}
-        \begin{rSubsection}{\href{https://github.com/ravibrock/texts-ai}{\myuline{Texts AI}}}{\textit{Python, Regex, SQL, Transformers}}{}{}
+        \begin{rSubsection}{\href{https://github.com/ravibrock/texts-ai}{\myuline{Texts AI \textnormal{\faGithub}}}}{\textit{Python, Regex, SQL, Transformers}}{}{}
             \item Designed and built a program that uses custom MacOS integrations to automatically read and reply to new texts
-            \item Queries messages with SQL and Regex and generates responses using multithreading and \textit{LLaMa} or \textit{GPT} LLMs
+            \item Queries messages with SQL and Regex and generates responses using multithreading and \textit{LLaMA} or \textit{GPT} LLMs
         \end{rSubsection}
-        \begin{rSubsection}{\href{https://github.com/ravibrock/twitter-scraping}{\myuline{Twitter Catalog}}}{\textit{Python}}{}{}
+        \begin{rSubsection}{\href{https://github.com/ravibrock/twitter-scraping}{\myuline{Twitter Catalog \textnormal{\faGithub}}}}{\textit{Python}}{}{}
             \item Built a tool to find which Twitter accounts you're most likely to be interested in based on who you follow
             \item Implemented rate limit and API handling with Requests and used Pandas to process data
         \end{rSubsection}
@@ -65,9 +61,9 @@
 
     \begin{rSection}{Skills}
         \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-            Languages & English (native), French (proficient), German (intermediate) \\
-            Programming languages & Bash, Lua, Python, R, CSS, HTML, \LaTeX\\
-            Tools & AWS, Excel, Git, Vercel, Vim
+            Languages & English, French, German \\
+            Programming languages & Bash, Lua, Python, R, CSS, HTML, \LaTeX \\
+            Tools & AWS, Git, SQL, Regex, Vercel, Vim
         \end{tabular}
     \end{rSection}
 \end{document}

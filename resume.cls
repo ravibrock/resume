@@ -1,7 +1,3 @@
-% resume.cls
-
-% \documentstyle{resume}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Copyright (C) 2010 by Trey Hunner
 %
@@ -16,11 +12,15 @@
 
 \LoadClass[11pt,letterpaper]{article}
 
+\usepackage[left=0.3in,top=0.3in,right=0.3in,bottom=0.3in]{geometry}
 \usepackage[parfill]{parskip}       % Do not indent paragraphs
 \usepackage{array}                  % required for boldface tabular columns
 \usepackage{ifthen}
 \usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
+\usepackage{contour}
+\usepackage{ulem}
+\usepackage{fontawesome}
 
 \nofiles                            % .aux files are not needed for resumes
 \pagestyle{empty}                   % resumes do not need page numbers
