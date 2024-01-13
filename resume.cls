@@ -17,6 +17,7 @@
 \usepackage{array}                  % required for boldface tabular columns
 \usepackage{ifthen}
 \usepackage{xcolor}
+\usepackage[T1]{fontenc}
 \usepackage[hidelinks]{hyperref}
 \usepackage{contour}
 \usepackage{ulem}
