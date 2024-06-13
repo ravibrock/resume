@@ -1,4 +1,110 @@
-\documentclass{resume}
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{fontawesome}
+\usepackage{silence}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{contour}
+\usepackage{ulem}
+\input{glyphtounicode}
+
+\DeclareFontShape{OT1}{cmr}{bx}{sc}{<-> cmbcsc10}{}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\WarningsOff[fancyhdr]
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \renewcommand{\ULdepth}{1.8pt}
 \contourlength{0.8pt}
@@ -7,64 +113,123 @@
     \llap{\contour{white}{#1}}%
 }
 
-\name{\textsc{Ravi Brock}}
-\address{\href{mailto:ravikeats@gmail.com}{\myuline{ravikeats@gmail.com}} \\ \href{https://ravibrock.com}{\myuline{ravibrock.com}} \\ \href{https://github.com/ravibrock}{\myuline{GitHub}} \\ \href{https://www.linkedin.com/in/ravibrock/}{\myuline{LinkedIn}}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\nameskip{\bigskip}
-\def\sectionskip{\medskip}
-
-\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 \begin{document}
-    \begin{rSection}{Skills}\hfuzz=7pt
-        \begin{tabular}{ @{} >{\bfseries}l R{14.41cm} l }
-            Languages & English, French \\
-            Programming languages & Bash, Lua, Python, R, CSS, HTML, \LaTeX \\
-            Tools & AWS, Git, Regex, SQL, Vercel, Vim
-        \end{tabular}
-    \end{rSection}
 
-    \begin{rSection}{Experience}
-        \begin{rSubsection}{Indra Capital - \href{https://indracapital.tech}{\myuline{Indracapital.tech}}}{2022}{Paid Intern}{Fayetteville, AR}
-            \item Developed Python scripts to scrape user-generated content from social media platforms
-            \item Processed and analyzed the scraped data for use in algorithmic trading
-        \end{rSubsection}
-        \begin{rSubsection}{University of Arkansas - \href{https://web.archive.org/web/20210426215910/https://arkansascovid.com/}{\myuline{Arkansascovid.com}}}{2021}{Student Data Journalist}{Fayetteville, AR}
-            \item Used R, Excel, Tableau, and Flourish to process data and create meaningful visualizations
-            \item Wrote, researched, and fact-checked stories about COVID-19 in Arkansas
-        \end{rSubsection}
-        \begin{rSubsection}{Arkansashype Reselling}{2018-2021}{Founder}{Fayetteville, AR}
-            \item Started buying shoes and selling them on the aftermarket at 13; scaled to \$60,000+ a year of revenue
-            \item Used Excel for accounting and R to scrape data to optimize purchasing
-        \end{rSubsection}
-    \end{rSection}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-    \begin{rSection}{Education}
-        \begin{rSubsection}{University of Waterloo}{2023-2028}{93.5\% average (equivalent to 4.0 GPA)}{Waterloo, CA}
-            \item Studying in the Faculty of Mathematics' co-op program
-            \item Undeclared Honor's Mathematics major
-        \end{rSubsection}
-    \end{rSection}
+\begin{center}
+    \textbf{\Huge \scshape Ravi Brock} \\ \vspace{1pt}
+    \small
+    \href{mailto:ravikeats@gmail.com}{\myuline{ravikeats@gmail.com}} $|$
+    \href{https://ravibrock.com}{\myuline{ravibrock.com}} $|$
+    \href{https://linkedin.com/in/ravibrock}{\myuline{LinkedIn}} $|$
+    \href{https://github.com/ravibrock}{\myuline{GitHub}}
+\end{center}
 
-    \begin{rSection}{Projects}
-        \begin{rSubsection}{\href{https://github.com/ravibrock/texts-ai}{\myuline{Texts AI \textnormal{\faGithub}}}}{\textit{Python, Regex, SQL, Transformers}}{}{}
-            \item Designed and built a program that uses custom MacOS integrations to automatically read and reply to new texts
-            \item Queries messages with SQL and Regex and generates responses using multithreading and \textit{LLaMA} or \textit{GPT} LLMs
-        \end{rSubsection}
-        \begin{rSubsection}{\href{https://github.com/ravibrock/twitter-scraping}{\myuline{Twitter Catalog \textnormal{\faGithub}}}}{\textit{Python}}{}{}
-            \item Built a tool to find which Twitter accounts you're most likely to be interested in based on who you follow
-            \item Implemented rate limit and API handling with Requests and used Pandas to process data
-        \end{rSubsection}
-    \end{rSection}
 
-    \begin{rSection}{Open-Source Contributions}
-        \begin{rSubsection}{\href{https://github.com/lewis6991/hover.nvim/pull/55}{\myuline{Hover.nvim \textnormal{\faGithub}}}}{\textit{Lua, Neovim}}{}{}
-            \item Implemented feature with Lua and Neovim APIs to allow the user to toggle between info sources (like LSPs)
-            \item Resolved pre-existing GitHub issue, added useful functionality to the plugin, and updated documentation
-        \end{rSubsection}
-        \begin{rSubsection}{\href{https://github.com/joshcai/leetcode-sync/pull/46}{\myuline{LeetCode Sync \textnormal{\faGithub}}}}{\textit{JavaScript, GitHub Actions}}{}{}
-            \item Added options to show more submission information (runtime, memory, etc.) and customize file locations
-            \item Used JavaScript and the LeetCode API to query details and improve commit messages based on user settings
-        \end{rSubsection}
-    \end{rSection}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading{Data Science Intern}{Apr. 2024 - Aug. 2024}{OwnersBox Fantasy Sports - \href{https://www.ownersbox.com/}{\myuline{Ownersbox.com}}}{Waterloo, ON, CA}
+    \resumeItemListStart
+      \resumeItem{Rearchitected and automated deployment of Google Cloud backups sytem to require 90\% fewer functions}
+      \resumeItem{Built data pipeline and implemented Bayesian model with a Kalman filter to predict daily revenue}
+  \resumeItemListEnd
+
+    \resumeSubheading{Software Engineering Intern}{Oct. 2022 - Dec. 2022}{Indra Capital - \href{https://indracapital.tech}{\myuline{Indracapital.tech}}}{Fayetteville, AR}
+      \resumeItemListStart
+        \resumeItem{Developed Python scripts to scrape user-generated content from social media platforms}
+        \resumeItem{Processed and analyzed the scraped data for use in algorithmic trading}
+    \resumeItemListEnd
+
+    \resumeSubheading{Student Data Journalist}{Jan. 2021 - May 2021}{University of Arkansas - \href{https://web.archive.org/web/20210426215910/https://arkansascovid.com/}{\myuline{Arkansascovid.com}}}{Fayetteville, AR}
+      \resumeItemListStart
+        \resumeItem{Used R, Excel, Tableau, and Flourish to process data and create meaningful visualizations}
+        \resumeItem{Wrote, researched, and fact-checked stories about COVID-19 in Arkansas}
+    \resumeItemListEnd
+
+    \resumeSubheading{Founder}{Nov. 2018 - Nov. 2021}{Arkansashype Reselling}{Fayetteville, AR}
+      \resumeItemListStart
+        \resumeItem{Started buying shoes and selling them on the aftermarket at 13; scaled to \$60,000+ a year of revenue}
+        \resumeItem{Used Excel for accounting and R to scrape data to optimize purchasing}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rice University}{Aug. 2024 - May 2027}
+      {Bachelor of Arts in Computer Science}{Houston, TX}
+    \resumeSubheading
+      {University of Waterloo}{Sept. 2023 - Apr. 2024}
+      {Bachelor of Mathematics \textit{(transferred to Rice)}}{Waterloo, ON, CA}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {{\href{https://github.com/ravibrock/spellwarn.nvim}{\myuline{\textbf{Spellwarn.nvim} \textnormal{\faGithub}}}} $|$ \textit{Lua, Neovim}}{}
+        \resumeItemListStart
+          \resumeItem{Wrote Neovim plugin using Lua and Neovim APIs to show spelling errors as diagnostics}
+          \resumeItem{Maintained plugin with 40+ stars on GitHub, pushed updates, and resolved GitHub issues}
+        \resumeItemListEnd
+      \resumeProjectHeading
+      {{\href{https://github.com/ravibrock/texts-ai}{\myuline{\textbf{Texts AI} \textnormal{\faGithub}}}} $|$ \textit{Python, Regex, SQL, Transformers}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and built a program that uses custom MacOS integrations to automatically read and reply to new texts}
+            \resumeItem{Queries messages with SQL and Regex and generates responses using multithreading and \textit{LLaMA} or \textit{GPT} LLMs}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {{\href{https://github.com/ravibrock/twitter-scraping}{\myuline{\textbf{Twitter Catalog} \textnormal{\faGithub}}}} $|$ \textit{Python}}{}
+              \resumeItemListStart
+                \resumeItem{Built a tool to find which Twitter accounts you're most likely to be interested in based on who you follow}
+                \resumeItem{Implemented rate limit and API handling with Requests and used Pandas to process data}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Open-Source Contributions}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {{\href{https://github.com/lewis6991/hover.nvim/pull/55}{\myuline{\textbf{Hover.nvim} \textnormal{\faGithub}}}} $|$ \textit{Lua, Neovim}}{}
+        \resumeItemListStart
+          \resumeItem{Implemented feature with Lua and Neovim APIs to allow the user to toggle between info sources (like LSPs)}
+          \resumeItem{Resolved pre-existing GitHub issue, added useful functionality to the plugin, and updated documentation}
+        \resumeItemListEnd
+    \resumeProjectHeading
+    {{\href{https://github.com/joshcai/leetcode-sync/pull/46}{\myuline{\textbf{LeetCode Sync} \textnormal{\faGithub}}}} $|$ \textit{JavaScript, GitHub Actions}}{}
+        \resumeItemListStart
+          \resumeItem{Added options to show more submission information (runtime, memory, etc.) and customize file locations}
+          \resumeItem{Used JavaScript and the LeetCode API to query details and improve commit messages based on user settings}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Bash, C, Lua, Python, R, Racket, SQL} \\
+     \textbf{Developer Tools}{: AWS, Git, Google Cloud Platform, Regex, \LaTeX, Valgrind, (Neo)vim} \\
+     \textbf{Libraries}{: Matplotlib, NumPy, Pandas, Requests, Seaborn} \\
+    \textbf{Languages}{: English, French}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
 \end{document}
