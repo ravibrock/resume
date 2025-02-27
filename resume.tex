@@ -6,7 +6,6 @@
 %-------------------------------------------------%
 
 \documentclass[letterpaper,11pt]{article}
-
 \usepackage{resume}
 
 \begin{document}
@@ -20,89 +19,80 @@
 \end{center}
 
 \section{Experience}
-  \resumeSubHeadingListStart
-
-\resumeSubheading{Data Engineering Intern}{Apr. 2024 - Present}{OwnersBox Fantasy Sports}{Waterloo, ON}
+\resumeSubHeadingListStart
+    \resumeSubheading{Data Engineering Intern}{Apr. 2024 - Present}{OwnersBox Fantasy Sports}{Waterloo, ON}
     \resumeItemListStart
-      \resumeItem{Rearchitected Google Cloud backups system to require 90\% fewer cloud functions}
-      \resumeItem{Built data pipeline and implemented Bayesian model with a Kalman filter to predict daily revenue}
-  \resumeItemListEnd
+        \resumeItem{Rearchitected Google Cloud backups system to require 90\% fewer cloud functions}
+        \resumeItem{Built data pipeline and implemented Bayesian model with a Kalman filter to predict daily revenue}
+    \resumeItemListEnd
 
     \resumeSubheading{Software Engineering Intern}{Oct. 2022 - Dec. 2022}{Indra Capital}{Fayetteville, AR}
-      \resumeItemListStart
+    \resumeItemListStart
         \resumeItem{Developed Python scripts to scrape user-generated content from social media platforms}
         \resumeItem{Processed and analyzed the scraped data for use in algorithmic trading}
     \resumeItemListEnd
 
     \resumeSubheading{Student Data Journalist}{Jan. 2021 - May 2021}{University of Arkansas - Arkansascovid}{Fayetteville, AR}
-      \resumeItemListStart
+    \resumeItemListStart
         \resumeItem{Used R, Excel, Tableau, and Flourish to process data and create meaningful visualizations}
         \resumeItem{Wrote, researched, and fact-checked stories about COVID-19 in Arkansas}
     \resumeItemListEnd
 
     \resumeSubheading{Founder}{Nov. 2018 - Nov. 2021}{Arkansashype Reselling}{Fayetteville, AR}
-      \resumeItemListStart
+    \resumeItemListStart
         \resumeItem{Started buying shoes and selling them on the aftermarket at 13; scaled to \$60,000+ a year of revenue}
         \resumeItem{Used Excel for accounting and R to scrape data to optimize purchasing}
     \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Rice University}{Aug. 2024 - May 2027}
-      {Bachelor of Arts in Computer Science (4.0 GPA)}{Houston, TX}
-    \resumeSubheading
-      {University of Waterloo}{Sept. 2023 - Apr. 2024}
-      {Bachelor of Mathematics \textit{(89.5\% average -- transferred to Rice)}}{Waterloo, ON}
-  \resumeSubHeadingListEnd
-
+\resumeSubHeadingListStart
+    \resumeSubheading{Rice University}{Aug. 2024 - May 2027}{Bachelor of Arts in Computer Science (4.0 GPA)}{Houston, TX}
+    \resumeSubheading{University of Waterloo}{Sept. 2023 - Apr. 2024}{Bachelor of Mathematics \textit{(89.5\% average -- transferred to Rice)}}{Waterloo, ON}
+\resumeSubHeadingListEnd
 
 \section{Projects}
-    \resumeSubHeadingListStart
-    \resumeProjectHeading
-    {{\href{https://github.com/ravibrock/spellwarn.nvim}{\myuline{\textbf{Spellwarn.nvim} \textnormal{\faGithub}}}} $|$ \textit{Lua, Neovim}}{}
-        \resumeItemListStart
-          \resumeItem{Wrote Neovim plugin using Lua and Neovim APIs to show spelling errors as diagnostics}
-          \resumeItem{Maintained plugin with 80+ stars on GitHub, pushed updates, and responded to issues}
-        \resumeItemListEnd
-      \resumeProjectHeading
-      {{\href{https://github.com/ravibrock/texts-ai}{\myuline{\textbf{Texts AI} \textnormal{\faGithub}}}} $|$ \textit{Python, Regex, SQL, Transformers}}{}
-          \resumeItemListStart
-            \resumeItem{Designed and built a program that uses custom MacOS integrations to automatically read and reply to new texts}
-            \resumeItem{Queries messages with SQL and Regex and generates responses using multithreading and \textit{LLaMA} or \textit{GPT} LLMs}
-          \resumeItemListEnd
-          \resumeProjectHeading
-          {{\href{https://github.com/ravibrock/market-analysis}{\myuline{\textbf{Market Analysis} \textnormal{\faGithub}}}} $|$ \textit{Python, R}}{}
-              \resumeItemListStart
-                \resumeItem{Built a tool to scrape data from crypto exchanges like Bybit and Kucoin and visualize + analyze the results}
-                \resumeItem{Implemented rate limit and API handling with Requests and used Pandas to process data}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+    \resumeProjectHeading{{\href{https://github.com/ravibrock/spellwarn.nvim}{\myuline{\textbf{Spellwarn.nvim} \textnormal{\faGithub}}}} $|$ \textit{Lua, Neovim}}{}
+    \resumeItemListStart
+        \resumeItem{Wrote Neovim plugin using Lua and Neovim APIs to show spelling errors as diagnostics}
+        \resumeItem{Maintained plugin with 80+ stars on GitHub, pushed updates, and responded to issues}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{{\href{https://github.com/ravibrock/texts-ai}{\myuline{\textbf{Texts AI} \textnormal{\faGithub}}}} $|$ \textit{Python, Regex, SQL, Transformers}}{}
+    \resumeItemListStart
+        \resumeItem{Designed and built a program that uses custom MacOS integrations to automatically read and reply to new texts}
+        \resumeItem{Queries messages with SQL and Regex and generates responses using multithreading and \textit{LLaMA} or \textit{GPT} LLMs}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{{\href{https://github.com/ravibrock/market-analysis}{\myuline{\textbf{Market Analysis} \textnormal{\faGithub}}}} $|$ \textit{Python, R}}{}
+    \resumeItemListStart
+        \resumeItem{Built a tool to scrape data from crypto exchanges like Bybit and Kucoin and visualize + analyze the results}
+        \resumeItem{Implemented rate limit and API handling with Requests and used Pandas to process data}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 \section{Open-Source Contributions}
-    \resumeSubHeadingListStart
-    \resumeProjectHeading
-    {{\href{https://github.com/lewis6991/hover.nvim/pull/55}{\myuline{\textbf{Hover.nvim} \textnormal{\faGithub}}}} $|$ \textit{Lua, Neovim}}{}
-        \resumeItemListStart
-          \resumeItem{Implemented feature with Lua and Neovim APIs to allow the user to toggle between info sources (like LSPs)}
-          \resumeItem{Resolved pre-existing GitHub issue, added useful functionality to the plugin, and updated documentation}
-        \resumeItemListEnd
-    \resumeProjectHeading
-    {{\href{https://github.com/joshcai/leetcode-sync/pull/46}{\myuline{\textbf{LeetCode Sync} \textnormal{\faGithub}}}} $|$ \textit{JavaScript, GitHub Actions}}{}
-        \resumeItemListStart
-          \resumeItem{Added options to show more submission information (runtime, memory, etc.) and customize file locations}
-          \resumeItem{Used JavaScript and the LeetCode API to query details and improve commit messages based on user settings}
-        \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+    \resumeProjectHeading{{\href{https://github.com/lewis6991/hover.nvim/pull/55}{\myuline{\textbf{Hover.nvim} \textnormal{\faGithub}}}} $|$ \textit{Lua, Neovim}}{}
+    \resumeItemListStart
+        \resumeItem{Implemented feature with Lua and Neovim APIs to allow the user to toggle between info sources (like LSPs)}
+        \resumeItem{Resolved pre-existing GitHub issue, added useful functionality to the plugin, and updated documentation}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{{\href{https://github.com/joshcai/leetcode-sync/pull/46}{\myuline{\textbf{LeetCode Sync} \textnormal{\faGithub}}}} $|$ \textit{JavaScript, GitHub Actions}}{}
+    \resumeItemListStart
+        \resumeItem{Added options to show more submission information (runtime, memory, etc.) and customize file locations}
+        \resumeItem{Used JavaScript and the LeetCode API to query details and improve commit messages based on user settings}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 \section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+\begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Bash, C, Java, Lua, Python, R, Racket, SQL, x86} \\
-     \textbf{Technologies}{: AWS, Git, Google Cloud, \LaTeX, Regex, Valgrind, (Neo)vim} \\
-     \textbf{Libraries}{: Matplotlib, NumPy, Pandas, Requests, Seaborn} \\
+        \textbf{Languages}{: Bash, C, Java, Lua, Python, R, Racket, SQL, x86} \\
+        \textbf{Technologies}{: AWS, Git, Google Cloud, \LaTeX, Regex, Valgrind, (Neo)vim} \\
+        \textbf{Libraries}{: Matplotlib, NumPy, Pandas, Requests, Seaborn} \\
     }}
- \end{itemize}
+\end{itemize}
 \end{document}
