@@ -11,7 +11,10 @@ jobs:
         with:
           root_file: resume.tex
 
-      - uses: actions/upload-artifact@v5
+      - name: make release
+        uses: softprops/action-gh-release@v2
         with:
-          name: resume
-          path: resume.pdf
+          tag_name: latest
+          files: resume.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
